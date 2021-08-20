@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap");
+.nav-link {
+  text-align: center;
+  line-height: 18px;
+  min-width: 100px;
+  padding: 0 .7rem;
+  font-family: "Montserrat", sans-serif; }
+
+.navbar-top {
+  overflow: hidden; }
+  .navbar-top .supporting-links {
+    padding-left: 3rem; }
+  .navbar-top .navbar-nav {
+    padding: .7rem 0; }
+    .navbar-top .navbar-nav .nav-item {
+      border-right: 1px solid white;
+      font-weight: bold; }
+      .navbar-top .navbar-nav .nav-item .nav-link {
+        font-size: clamp(0.5rem, 5vw, 1rem);
+        color: white; }
+    .navbar-top .navbar-nav .nav-item:last-child {
+      border: none; }
+
+.navbar-main .navbar .navbar-brand {
+  padding-left: 6rem; }
+@media (max-width: 600px) {
+  .navbar-main .navbar .navbar-brand {
+    padding: 0 !important; } }
+.navbar-main .navbar .collapse {
+  padding-right: 6rem; }
+  .navbar-main .navbar .collapse .nav-item {
+    border-right: 1px solid rgba(0, 0, 0, 0.192);
+    position: relative; }
+    .navbar-main .navbar .collapse .nav-item .nav-link {
+      font-size: clamp(1rem, 5vw, 1.1rem);
+      color: black;
+      line-height: 22px;
+      padding: 0 1.5rem; }
+      .navbar-main .navbar .collapse .nav-item .nav-link:hover {
+        color: #24586F; }
+      .navbar-main .navbar .collapse .nav-item .nav-link i {
+        color: rgba(0, 0, 0, 0.473);
+        padding: 0 5px;
+        font-size: 1.1rem; }
+  .navbar-main .navbar .collapse .nav-item:last-child {
+    border: none; }
+  .navbar-main .navbar .collapse .collapse-content {
+    position: absolute;
+    display: none;
+    background-color: #d13f3f;
+    font-family: "Montserrat", sans-serif;
+    min-width: 250px;
+    text-align: left;
+    transition: all 100ms ease-in-out; }
+    .navbar-main .navbar .collapse .collapse-content.active {
+      display: block; }
+    .navbar-main .navbar .collapse .collapse-content ul {
+      padding: 1rem 2rem; }
+      .navbar-main .navbar .collapse .collapse-content ul li {
+        padding: 10px 0;
+        list-style: none;
+        position: relative; }
+        .navbar-main .navbar .collapse .collapse-content ul li a {
+          font-size: clamp(0.7rem, 5vw, 1rem); }
+        .navbar-main .navbar .collapse .collapse-content ul li::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0%;
+          height: 3px;
+          background-color: #24586F;
+          z-index: 2;
+          transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1); }
+        .navbar-main .navbar .collapse .collapse-content ul li:hover::after {
+          width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
